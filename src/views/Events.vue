@@ -27,17 +27,20 @@
 // "View Details" button is ... sorta? accessible via keyboard but because it's on a hover, it's very confusing where the focus is and what is happening
 // use focus instead of hover effects
 
+import winterImagePath from '@/assets/images/winter.png';
+import springImagePath from '@/assets/images/spring.png';
+
 export default {
   name: 'events-page',
   data () {
     return {
       events: [{
-        imgSrc: '/src/assets/images/winter.png',
+        imgSrc: winterImagePath,
         title: 'Winter',
         to: '/events/winter'
       },
       {
-        imgSrc: '/src/assets/images/spring.png',
+        imgSrc: springImagePath,
         title: 'Spring',
         to: '/events/spring'
       }]
